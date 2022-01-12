@@ -1,0 +1,39 @@
+{
+    "update_id": 762722348,
+    "message": {
+        "message_id": 2,
+        "from": {
+            "id": 308921082,
+            "is_bot": false,
+            "first_name": "kb",
+            "username": "kb_nova"
+        },
+        "chat": {
+            "id": -1001429005730,
+            "title": "Ref_Tracking_G",
+            "username": "ref_tracking_g",
+            "type": "supergroup"
+        },
+        "date": 1642008353,
+        "new_chat_participant": {
+            "id": 308921082,
+            "is_bot": false,
+            "first_name": "kb",
+            "username": "kb_nova"
+        },
+        "new_chat_member": {
+            "id": 308921082,
+            "is_bot": false,
+            "first_name": "kb",
+            "username": "kb_nova"
+        },
+        "new_chat_members": [
+            {
+                "id": 308921082,
+                "is_bot": false,
+                "first_name": "kb",
+                "username": "kb_nova"
+            }
+        ]
+    }
+}
