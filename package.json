@@ -1,0 +1,22 @@
+{
+  "name": "telegram-referral-bot-nodejs",
+  "version": "1.0.0",
+  "description": "A telegram bot to track channel users using referrals.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windswept321/telegram-referral-bot-nodejs.git"
+  },
+  "keywords": [
+    "Telegram Bot"
+  ],
+  "author": "Estifanos Neway",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
