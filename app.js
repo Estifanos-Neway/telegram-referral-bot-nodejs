@@ -6,7 +6,7 @@ const {
 } = require("./variables");
 
 const app = express();
-const port = process.env.port || default_port;
+const port = process.env.PORT || default_port;
 
 function incomingPostHandler(req,res){
     res.end("All Good.");
