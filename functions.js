@@ -1,5 +1,6 @@
 
 const { MongoClient } = require("mongodb");
+const shortid = require("shortid");
 
 const {
     database_url,
@@ -9,25 +10,19 @@ const {
 
 const client = new MongoClient(database_url);
 
-async function generateReferral(){
-    // unimplemented
-    try {
-
-    } catch (error) {
-
-    }
-    return 67;
-}
-
-async function checkExistence(user_id){
+async function generateReferral() {
     let retry_count = 0;
     while (true) {
         try {
             await client.connect();
             const collection = await client.db(database_name).collection(users_collection_name);
-            const result = await collection.findOne({ _id: user_id });
-            return !!result;
-
+            while (true) {
+                let new_referral = shortid.generate();
+                const result = await collection.findOne({ referral: new_referral });
+                if (!result) {
+                    return new_referral;
+                }
+            }
         }
         catch (error) {
             console.error(error);
@@ -43,7 +38,7 @@ async function checkExistence(user_id){
     }
 }
 
-async function addUser(user_id, referral){
+async function addUser(user_id, referral) {
     let retry_count = 0;
     while (true) {
         try {
@@ -51,10 +46,14 @@ async function addUser(user_id, referral){
             const collection = await client.db(database_name).collection(users_collection_name);
 
             const new_user = { _id: user_id, referral: referral };
-            const result = await collection.insertOne(new_user);
-
-            console.log(`#NEW | A user [ id: ${result.insertedId} ] added`);
-            break;
+            try {
+                const result = await collection.insertOne(new_user);
+                console.log(`#NEW | A user [ id: ${user_id} ] added`);
+                return "true";
+            } catch (error) {
+                console.log(`#EXIST | The user [ id: ${user_id} ] already exist`);
+                return false;
+            }
         }
         catch (error) {
             console.error(error);
@@ -69,16 +68,19 @@ async function addUser(user_id, referral){
         }
     }
 }
-
-exports.newUsersHandler = (new_chat_members) => {
+function askReferrer(user_id) {
+    //unimplemented
+}
+exports.newUsersHandler = async new_chat_members => {
     try {
         new_chat_members.forEach(
             async user => {
                 const id = user["id"];
-                const user_exist = await checkExistence(id);
-                if (!user_exist) {
-                    const referral = await generateReferral();
-                    await addUser(id, referral);
+                const referral = await generateReferral();
+                const userAdded = await addUser(id, referral);
+                console.log(`c:${userAdded}`);
+                if (userAdded) {
+                    askReferrer(id);
                 }
             });
     } catch (error) {
