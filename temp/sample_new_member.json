@@ -1,39 +1,100 @@
-{
-    "update_id": 762722348,
-    "message": {
-        "message_id": 2,
-        "from": {
-            "id": 308921082,
-            "is_bot": false,
-            "first_name": "kb",
-            "username": "kb_nova"
-        },
-        "chat": {
-            "id": -1001429005730,
-            "title": "Ref_Tracking_G",
-            "username": "ref_tracking_g",
-            "type": "supergroup"
-        },
-        "date": 1642008353,
-        "new_chat_participant": {
-            "id": 308921082,
-            "is_bot": false,
-            "first_name": "kb",
-            "username": "kb_nova"
-        },
-        "new_chat_member": {
-            "id": 308921082,
-            "is_bot": false,
-            "first_name": "kb",
-            "username": "kb_nova"
-        },
-        "new_chat_members": [
-            {
-                "id": 308921082,
+[
+    {
+        "update_id": 762722364,
+        "message": {
+            "message_id": 21,
+            "from": {
+                "id": 1398598219,
                 "is_bot": false,
-                "first_name": "kb",
-                "username": "kb_nova"
-            }
-        ]
+                "first_name": "Kely",
+                "username": "KelyyN"
+            },
+            "chat": {
+                "id": -1001429005730,
+                "title": "Ref_Tracking_G",
+                "username": "ref_tracking_g",
+                "type": "supergroup"
+            },
+            "date": 1642076836,
+            "reply_to_message": {
+                "message_id": 20,
+                "from": {
+                    "id": 5061043022,
+                    "is_bot": true,
+                    "first_name": "Ref_Tracker",
+                    "username": "Ref_Tracker_Bot"
+                },
+                "chat": {
+                    "id": -1001429005730,
+                    "title": "Ref_Tracking_G",
+                    "username": "ref_tracking_g",
+                    "type": "supergroup"
+                },
+                "date": 1642075866,
+                "text": "Hi KelyyN, Welcome to our group. Have you been referred? please replay your referrers code for this message. Thankyou. | #ReferrerRequest",
+                "entities": [
+                    {
+                        "offset": 3,
+                        "length": 6,
+                        "type": "bold"
+                    },
+                    {
+                        "offset": 64,
+                        "length": 6,
+                        "type": "bold"
+                    },
+                    {
+                        "offset": 64,
+                        "length": 6,
+                        "type": "italic"
+                    },
+                    {
+                        "offset": 121,
+                        "length": 16,
+                        "type": "hashtag"
+                    }
+                ]
+            },
+            "text": "cool bot"
+        }
+    },
+    {
+        "update_id": 762722361,
+        "message": {
+            "message_id": 14,
+            "from": {
+                "id": 1398598219,
+                "is_bot": false,
+                "first_name": "Kely",
+                "username": "KelyyN"
+            },
+            "chat": {
+                "id": -1001429005730,
+                "title": "Ref_Tracking_G",
+                "username": "ref_tracking_g",
+                "type": "supergroup"
+            },
+            "date": 1642074062,
+            "new_chat_participant": {
+                "id": 1398598219,
+                "is_bot": false,
+                "first_name": "Kely",
+                "username": "KelyyN"
+            },
+            "new_chat_member": {
+                "id": 1398598219,
+                "is_bot": false,
+                "first_name": "Kely",
+                "username": "KelyyN"
+            },
+            "new_chat_members": [
+                {
+                    "id": 1398598219,
+                    "is_bot": false,
+                    "first_name": "Kely",
+                    "username": "KelyyN"
+                }
+            ]
+        }
     }
-}
+]
