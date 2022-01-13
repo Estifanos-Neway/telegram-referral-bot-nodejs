@@ -96,5 +96,40 @@
                 }
             ]
         }
+    },
+    {
+        "update_id": 762722369,
+        "message": {
+            "message_id": 42,
+            "from": {
+                "id": 1398598219,
+                "is_bot": false,
+                "first_name": "Kely",
+                "username": "KelyyN"
+            },
+            "chat": {
+                "id": -1001429005730,
+                "title": "Ref_Tracking_G",
+                "username": "ref_tracking_g",
+                "type": "supergroup"
+            },
+            "date": 1642090886,
+            "video": {
+                "duration": 258,
+                "width": 1280,
+                "height": 720,
+                "mime_type": "video/mp4",
+                "thumb": {
+                    "file_id": "AAMCBAADHQJVLOWiAAMqYeBRhs_GEL9YJGoZSSryN7LsungAAjoJAAJvcwFTUBOhzmBqEJMBAAdtAAMjBA",
+                    "file_unique_id": "AQADOgkAAm9zAVNy",
+                    "file_size": 12587,
+                    "width": 320,
+                    "height": 196
+                },
+                "file_id": "BAACAgQAAx0CVSzlogADKmHgUYbPxhC_WCRqGUkq8jey7Lp4AAI6CQACb3MBU1AToc5gahCTIwQ",
+                "file_unique_id": "AgADOgkAAm9zAVM",
+                "file_size": 24404995
+            }
+        }
     }
 ]
