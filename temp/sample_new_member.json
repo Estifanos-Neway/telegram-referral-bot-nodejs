@@ -98,6 +98,66 @@
         }
     },
     {
+        "update_id": 762722487,
+        "message": {
+            "message_id": 218,
+            "from": {
+                "id": 391983541,
+                "is_bot": false,
+                "first_name": "St\u00edv",
+                "username": "Estifanos_Neway",
+                "language_code": "en"
+            },
+            "chat": {
+                "id": -1001429005730,
+                "title": "Ref_Tracking_G",
+                "username": "ref_tracking_g",
+                "type": "supergroup"
+            },
+            "date": 1642191844,
+            "new_chat_participant": {
+                "id": 1543225428,
+                "is_bot": false,
+                "first_name": "Amen"
+            },
+            "new_chat_member": {
+                "id": 1543225428,
+                "is_bot": false,
+                "first_name": "Amen"
+            },
+            "new_chat_members": [
+                {
+                    "id": 1543225428,
+                    "is_bot": false,
+                    "first_name": "Amen"
+                },
+                {
+                    "id": 410807955,
+                    "is_bot": false,
+                    "first_name": "\u00c3\u00ff\u00e0l",
+                    "username": "Ayal1399"
+                },
+                {
+                    "id": 673963998,
+                    "is_bot": false,
+                    "first_name": "Unwanted"
+                },
+                {
+                    "id": 471476203,
+                    "is_bot": false,
+                    "first_name": "Dagi",
+                    "username": "D21s37"
+                },
+                {
+                    "id": 1969364448,
+                    "is_bot": false,
+                    "first_name": "yosef",
+                    "last_name": "Abera"
+                }
+            ]
+        }
+    },
+    {
         "update_id": 762722369,
         "message": {
             "message_id": 42,
